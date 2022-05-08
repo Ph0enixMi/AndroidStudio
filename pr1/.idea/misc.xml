@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Lesson1/layouttype/src/main/res/layout/activity_main.xml" value="0.55" />
+        <entry key="..\:/Lesson1/layouttype/src/main/res/layout/activity_second.xml" value="0.55" />
+        <entry key="..\:/Lesson1/layouttype/src/main/res/layout/table_layout.xml" value="0.55" />
         <entry key="..\:/Users/mikek/Desktop/C#PPHJGS/Lesson1/app/src/main/res/layout/activity_main.xml" value="0.55" />
         <entry key="..\:/Users/mikek/Desktop/C#PPHJGS/Lesson1/clickbuttons/src/main/res/layout/activity_main.xml" value="0.55" />
         <entry key="..\:/Users/mikek/Desktop/C#PPHJGS/Lesson1/layouttype/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.505" />
