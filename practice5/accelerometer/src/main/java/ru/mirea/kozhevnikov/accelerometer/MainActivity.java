@@ -24,28 +24,23 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         setContentView(R.layout.activity_main);
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         accelerometerSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-
         azimuthTextView = findViewById(R.id.textViewAzimuth);
         pitchTextView = findViewById(R.id.textViewPitch);
         rollTextView = findViewById(R.id.textViewRoll);
     }
-
     @Override
-    protected void onPause(){
+    protected void onPause() {
         super.onPause();
         sensorManager.unregisterListener(this);
     }
-
     @Override
-    protected void onResume(){
+    protected void onResume() {
         super.onResume();
-        sensorManager.registerListener(this,accelerometerSensor,
-                SensorManager.SENSOR_DELAY_NORMAL);
+        sensorManager.registerListener(this, accelerometerSensor, SensorManager.SENSOR_DELAY_NORMAL);
     }
-
     @Override
     public void onSensorChanged(SensorEvent event) {
-        if(event.sensor.getType() == Sensor.TYPE_ACCELEROMETER){
+        if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
             float valueAzimuth = event.values[0];
             float valuePitch = event.values[1];
             float valueRoll = event.values[2];
@@ -54,9 +49,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             rollTextView.setText("Roll: " + valueRoll);
         }
     }
-
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
-
     }
 }

@@ -12,9 +12,8 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "practice5"
+rootProject.name = "practive5"
 include ':app'
 include ':accelerometer'
 include ':camera'
-include ':camera1'
 include ':audiorecord'
